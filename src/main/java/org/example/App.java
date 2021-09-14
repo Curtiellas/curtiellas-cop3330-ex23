@@ -13,56 +13,56 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println( "Is the car silent when you turn on the key?" );
+        System.out.print( "Is the car silent when you turn on the key? " );
         String answer = sc.next();
 
         if (answer.equalsIgnoreCase("y"))
         {
-            System.out.println( "Are the battery terminals corroded?" );
+            System.out.print( "Are the battery terminals corroded? " );
             answer = sc.next();
 
             if (answer.equalsIgnoreCase("y"))
-                System.out.println( "Clean terminals and try starting again." );
+                System.out.print( "Clean terminals and try starting again." );
 
             else
-                System.out.println("Replace cables and try again.");
+                System.out.print("Replace cables and try again.");
         }
 
         else
         {
-            System.out.println( "Does the car make a slicking noise?" );
+            System.out.print( "Does the car make a slicking noise? " );
             answer = sc.next();
 
             if (answer.equalsIgnoreCase("y"))
-                System.out.println("Replace the battery.");
+                System.out.print("Replace the battery.");
 
             else
             {
-                System.out.println( "Does the car crank up but fail to start?" );
+                System.out.print( "Does the car crank up but fail to start? " );
                 answer = sc.next();
 
                 if (answer.equalsIgnoreCase("y"))
-                    System.out.println("Check the spark plug connections.");
+                    System.out.print("Check the spark plug connections.");
 
                 else
                 {
-                    System.out.println( "Does the engine start and then die?" );
+                    System.out.print( "Does the engine start and then die? " );
                     answer = sc.next();
 
                     if (answer.equalsIgnoreCase("y"))
                     {
-                        System.out.println( "Does you car have fuel injection?" );
+                        System.out.print( "Does you car have fuel injection? " );
                         answer = sc.next();
 
                         if (answer.equalsIgnoreCase("y"))
-                            System.out.println("Get it in for service.");
+                            System.out.print("Get it in for service.");
 
                         else
-                            System.out.println("Check to ensure the choke is opening and closing.");
+                            System.out.print("Check to ensure the choke is opening and closing.");
                     }
 
                     else
-                        System.out.println("This should not be possible.");
+                        System.out.print("This should not be possible.");
                 }
             }
         }
